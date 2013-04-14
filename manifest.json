@@ -3,6 +3,9 @@
   "name": "DoubanPac",
   "description": "webpac.zju.edu.cn for Douban",
   "version": "0.1",
+  "permissions": [
+    "*://*/"
+  ],
   "homepage_url": "http://blog.teawhen.com/aquarhead",
   "content_scripts": [
     {
