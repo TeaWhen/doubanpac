@@ -2,15 +2,20 @@
   "manifest_version": 2,
   "name": "DoubanPac",
   "description": "webpac.zju.edu.cn for Douban",
-  "version": "0.1",
+  "version": "0.2",
   "permissions": [
     "*://*/"
   ],
   "homepage_url": "http://blog.teawhen.com/aquarhead",
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["events.js"],
+    "persistent": false
+  },
   "content_scripts": [
     {
       "matches": ["*://book.douban.com/subject/*"],
-      "js": ["jquery.js", "jkl-parsexml.js", "doubanpac.js"],
+      "js": ["jquery.js", "jkl-parsexml.js", "json2.js", "doubanpac.js"],
       "run_at": "document_end"
     }
   ]
