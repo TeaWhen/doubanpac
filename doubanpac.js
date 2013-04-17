@@ -35,12 +35,12 @@ if (find_data.find.no_records > 0) {
       $('#wrapper h1 span').text() +
       "\" data-content=\"" +
       item["call-no-1"] + item["sub-library"] +
-      "\">mark!</a>";
+      "\"> ➾</a>";
     $('#webpac-info ul').append("<li style=\"border: none\">" + 
       book_info_str + send_link +
       "</li>");
   }
-}
+}  
 
 function make_base_auth(username, password) {  
   return "Basic " +Base64.encode(username + ':' + password);
