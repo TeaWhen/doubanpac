@@ -34,7 +34,7 @@ if (find_data.find.no_records > 0) {
     var send_link = " : <a href=\"#\" class=\"doubanpac-send\" data-title=\"" +
       $('#wrapper h1 span').text() +
       "\" data-content=\"" +
-      item["call-no-1"] + item["sub-library"] +
+      item["call-no-1"] + " " + item["sub-library"] +
       "\"> ➾</a>";
     $('#webpac-info ul').append("<li style=\"border: none\">" + 
       book_info_str + send_link +
