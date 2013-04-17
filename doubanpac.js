@@ -70,6 +70,7 @@ $('.doubanpac-send').click(function() {
       // notify no settings
     };
   });
+  return false;
 });
 
 /* http://www.webtoolkit.info/javascript-base64.html */
