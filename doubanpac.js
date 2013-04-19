@@ -12,7 +12,7 @@ $.ajax({
   complete: function() {
     console.log("load webpac complete");
   }
-});
+}); // use local ip if in ZJU
 
 function checkPac(base_url) {
   var book_isbn = /ISBN: (\d+)/.exec($("#info").text())[1];
@@ -57,19 +57,23 @@ function checkPac(base_url) {
         book_info_str + send_link +
         "</li>");
     }
-  }  
+  } // end make sidebar
 
   function make_base_auth(username, password) {  
     return "Basic " +Base64.encode(username + ':' + password);
-  }  
+  }
 
   $('.doubanpac-send').click(function() {
-
     var post_data = $(this).data();
 
     chrome.extension.sendMessage({method: "getServerInfo"}, function(response) {
-      if (response.url){
-        var remarqueurl = response.url + "/api/note/";
+      if (response.username){
+        var remarqueurl = ""
+        if (response.url) {
+          remarqueurl = response.url + "/api/note/";
+        } else {
+          remarqueurl = "http://vps.teawhen.com:8123/api/note/"
+        }
         var remarqueusername = response.username;
         var remarquepassword = response.password;
         console.log("sending to Remarque");
@@ -87,8 +91,7 @@ function checkPac(base_url) {
       };
     });
     return false;
-  });
-
+  }); // end function of click
 }
 
 /* http://www.webtoolkit.info/javascript-base64.html */

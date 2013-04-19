@@ -1,6 +1,6 @@
-$('#url').attr({value: localStorage['doubanpacURL']});
-$('#username').attr({value: localStorage['doubanpacUSERNAME']});
-$('#password').attr({value: localStorage['doubanpacPASSWORD']});
+$('#url').val(localStorage['doubanpacURL']);
+$('#username').val(localStorage['doubanpacUSERNAME']);
+$('#password').val(localStorage['doubanpacPASSWORD']);
 
 $('#save').click(function() {
   localStorage['doubanpacURL'] = $('#url').val()

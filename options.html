@@ -1,15 +1,40 @@
 <html>
 <head>
   <title>DoubanPac Settings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-<h2>Remarque Server</h2>
-URL: <input type="text" id="url" /><br />
-Username: <input type="text" id="username" /><br />
-Password: <input type="password" id="password" /><br />
-<a href="#" id="save">Save</a>
+  <div class="container">
+    
+    <div class="row">
+      <div class="span6 offset3">
+        <form action="" method="post" class="form">
+          <fieldset>
+            <legend>Remarque Server Settings</legend>
+            <label>Server URL</label>
+            <input type="text" id="url" placeholder="Default Server">
+            <span class="help-block">Leave off to use our default server.</span>
+            <label>Username</label>
+            <input type="text" id="username" placeholder="Type something…">
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Type something…">
+            <hr>
+            <button type="submit" class="btn btn-primary" id="save">Save</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+        
+    <hr>
+    
+    <footer>
+      <p style="text-align:right;">_by AquarHEAD L. | _a Team.TeaWhen project</p>
+    </footer>
+  
+  </div>
 
 </body>
 <script src="jquery.js"></script>
