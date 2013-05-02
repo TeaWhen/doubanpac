@@ -1,6 +1,6 @@
 $.ajax({
   url: "http://10.10.16.94/X?op=find&base=zju01&code=wrd&request=python",
-  timeout: 1000,
+  timeout: 100,
   success: function() {
     console.log("in ZJU");
     checkPac("http://10.10.16.94/");
