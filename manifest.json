@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "DoubanPac",
   "description": "webpac.zju.edu.cn for Douban",
-  "version": "0.2",
+  "version": "0.3",
   "permissions": [
     "*://*/"
   ],
@@ -15,8 +15,12 @@
   "content_scripts": [
     {
       "matches": ["*://book.douban.com/subject/*"],
-      "js": ["jquery.js", "jkl-parsexml.js", "json2.js", "doubanpac.js"],
+      "js": ["jquery-2.0.3.min.js", "jkl-parsexml.js", "json2.js", "doubanpac.js"],
       "run_at": "document_end"
     }
+  ],
+  "web_accessible_resources": [
+    "jquery-2.0.3.min.js",
+    "jquery-2.0.3.min.map"
   ]
 }
