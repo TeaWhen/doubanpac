@@ -38,6 +38,8 @@ function checkPac(base_url) {
       var status2 = "";
       if (item["item-status"] == "12") {
         status1 = "普通外借";
+      } else if (item["item-status"] == "11") {
+        status1 = "订购中.."
       } else {
         status1 = "图书借阅";
       }

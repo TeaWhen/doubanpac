@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "DoubanPac",
   "description": "webpac.zju.edu.cn for Douban",
-  "version": "0.3",
+  "version": "0.3.1",
   "permissions": [
     "*://*/"
   ],
