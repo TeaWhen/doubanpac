@@ -14,3 +14,6 @@ webpac.zju.edu.cn for douban.com
 3. enable `Developer mode`
 4. click `Load unpacked entension...` and choose the repo
 5. refresh and enjoy!
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/TeaWhen/doubanpac/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
